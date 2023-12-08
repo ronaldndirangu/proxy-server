@@ -14,7 +14,7 @@ const authRouter = require("./routes/auth");
 // initialize express
 const app = express();
 
-const API_SERVICE_URL = "https://staticpagebranches.z16.web.core.windows.net";
+const API_SERVICE_URL = "http://localhost:6000";
 
 app.use(
   session({
