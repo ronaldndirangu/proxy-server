@@ -1,8 +1,3 @@
-/*
- * Copyright (c) Microsoft Corporation. All rights reserved.
- * Licensed under the MIT License.
- */
-
 require("dotenv").config();
 
 const path = require("path");
@@ -19,12 +14,8 @@ const authRouter = require("./routes/auth");
 // initialize express
 const app = express();
 
-const API_SERVICE_URL = "http://localhost:6006";
+const API_SERVICE_URL = "https://staticpagebranches.z16.web.core.windows.net";
 
-/**
- * Using express-session middleware for persistent user session. Be sure to
- * familiarize yourself with available options. Visit: https://www.npmjs.com/package/express-session
- */
 app.use(
   session({
     secret: process.env.EXPRESS_SESSION_SECRET,
